@@ -1,0 +1,17 @@
+{
+  "name": "skyflow-test-marketplace",
+  "owner": {
+    "name": "Skyflow"
+  },
+  "metadata": {
+    "description": "Test marketplace for the Skyflow Grok Bot plugin",
+    "version": "0.0.1"
+  },
+  "plugins": [
+    {
+      "name": "skyflow-test",
+      "source": "./",
+      "description": "Test plugin that checks whether Grok Bot and Cursor resolve a variable in the Skyflow MCP URL."
+    }
+  ]
+}

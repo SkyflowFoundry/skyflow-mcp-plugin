@@ -1,0 +1,25 @@
+{
+  "name": "skyflow-test",
+  "version": "0.0.1",
+  "description": "Test plugin that checks whether Grok Bot and Cursor resolve a variable in the Skyflow MCP URL.",
+  "author": {
+    "name": "Skyflow",
+    "url": "https://www.skyflow.com"
+  },
+  "homepage": "https://github.com/SkyflowFoundry/grok-bot-plugin",
+  "repository": "https://github.com/SkyflowFoundry/grok-bot-plugin",
+  "keywords": ["skyflow"],
+  "skills": "skills",
+  "mcpServers": "mcp.json",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "SKYFLOW_ACCOUNT_ID": {
+        "type": "string",
+        "title": "Skyflow account ID",
+        "description": "The ID of your Skyflow account. It forms part of the Skyflow MCP server URL."
+      }
+    },
+    "required": ["SKYFLOW_ACCOUNT_ID"]
+  }
+}
