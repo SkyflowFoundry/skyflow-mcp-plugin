@@ -9,6 +9,7 @@
   },
   "homepage": "https://github.com/SkyflowFoundry/grok-bot-plugin",
   "repository": "https://github.com/SkyflowFoundry/grok-bot-plugin",
+  "license": "MIT",
   "keywords": [
     "skyflow"
   ],
