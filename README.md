@@ -5,7 +5,7 @@ This is a throwaway test plugin. It checks whether Grok Bot and Cursor resolve a
 ## What it contains
 
 1. `.cursor-plugin/plugin.json` declares the `SKYFLOW_ACCOUNT_ID` variable.
-2. `mcp.json` points at `https://mcp.skyflow.dev/${SKYFLOW_ACCOUNT_ID}` which is the Blitz dev server.
+2. `mcp.json` points at `https://mcp.skyflow.com/${SKYFLOW_ACCOUNT_ID}` which is the production Skyflow MCP server.
 3. `skills/skyflow-connection-test` tells the agent to call `list_accounts` and to report failures precisely.
 
 ## Test in Grok Bot

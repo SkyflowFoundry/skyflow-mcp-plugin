@@ -2,7 +2,7 @@
   "mcpServers": {
     "skyflow": {
       "type": "http",
-      "url": "https://mcp.skyflow.dev/${SKYFLOW_ACCOUNT_ID}"
+      "url": "https://mcp.skyflow.com/${SKYFLOW_ACCOUNT_ID}"
     }
   }
 }
