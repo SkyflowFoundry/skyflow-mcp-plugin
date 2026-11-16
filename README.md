@@ -4,6 +4,15 @@ This plugin connects AI agents to Skyflow through the official Skyflow Developer
 
 The plugin contains only the MCP server. Skyflow's skills live in [SkyflowFoundry/skyflow-skills](https://github.com/SkyflowFoundry/skyflow-skills) and install separately.
 
+## Before you install
+
+Enable the MCP server in your Skyflow account first because sign-in fails until you do.
+
+1. Sign in to Skyflow.
+2. Open **AI Controls** in the left nav.
+3. Enable the MCP server if it is not already enabled.
+4. Add `https://www.cursor.com/agents/mcp/oauth/callback` as a redirect URL. Grok Bot needs this URL because it signs in through Cursor's connector backend.
+
 ## Install in Grok Bot
 
 These steps follow xAI's guide to [connecting apps in Grok Bot](https://docs.x.ai/grok-bot/computer-and-apps). Once the plugin is listed in the marketplace you can install it from the catalog:
