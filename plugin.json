@@ -1,0 +1,18 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "skyflow",
+  "version": "0.1.0",
+  "description": "Connect AI agents to Skyflow through the official Skyflow Developer MCP server.",
+  "author": {
+    "name": "Skyflow",
+    "url": "https://www.skyflow.com"
+  },
+  "homepage": "https://github.com/SkyflowFoundry/skyflow-mcp-plugin",
+  "repository": "https://github.com/SkyflowFoundry/skyflow-mcp-plugin",
+  "license": "MIT",
+  "keywords": [
+    "skyflow",
+    "skyflow-vault",
+    "mcp"
+  ]
+}

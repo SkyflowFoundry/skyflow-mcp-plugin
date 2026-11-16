@@ -4,14 +4,15 @@
     "name": "Skyflow"
   },
   "metadata": {
-    "description": "Official Skyflow plugin for Grok Bot and Cursor",
-    "version": "0.0.1"
+    "description": "Official Skyflow MCP plugin for Grok Bot and Cursor",
+    "version": "0.1.0"
   },
   "plugins": [
     {
       "name": "skyflow",
       "source": "./",
-      "description": "Connect Grok Bot and Cursor to Skyflow through the official Skyflow MCP server."
+      "description": "Connect AI agents to Skyflow through the official Skyflow Developer MCP server.",
+      "logo": "assets/logo.svg"
     }
   ]
 }

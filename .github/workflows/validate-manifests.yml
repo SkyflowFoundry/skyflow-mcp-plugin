@@ -1,0 +1,26 @@
+name: Validate manifests
+
+# Checks plugin.json and mcp.json against the Agent Plugins 1.0.0 schemas, keeps
+# the marketplace entry in sync, and pins the MCP server to the production host.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Install dependencies
+        run: pip install jsonschema
+      - name: Validate plugin, MCP, and marketplace manifests
+        run: python3 .github/scripts/validate-manifests.py
