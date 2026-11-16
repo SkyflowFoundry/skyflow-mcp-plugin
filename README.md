@@ -11,7 +11,28 @@ Enable the MCP server in your Skyflow account first because sign-in fails until 
 1. Sign in to Skyflow.
 2. Open **AI Controls** in the left nav.
 3. Enable the MCP server if it is not already enabled.
-4. Add `https://www.cursor.com/agents/mcp/oauth/callback` as a redirect URL. Grok Bot needs this URL because it signs in through Cursor's connector backend.
+4. Add the redirect URL for each host you sign in from.
+
+| Host | Redirect URL |
+| ---- | ------------ |
+| Grok Bot | `https://www.cursor.com/agents/mcp/oauth/callback` |
+| Cursor web and Cloud Agents | `https://www.cursor.com/agents/mcp/oauth/callback` |
+| Cursor desktop | `http://localhost:8787/callback` |
+
+Grok Bot uses the same URL as Cursor's Cloud Agents because it signs in through Cursor's connector backend. The Cursor URLs come from Cursor's [MCP documentation](https://cursor.com/docs/context/mcp).
+
+### Other MCP clients
+
+Other clients can connect to `https://mcp.skyflow.com` directly without this plugin. These redirect URLs come from Zuora's list of [redirect URIs by MCP client](https://docs.zuora.com/en/zuora-ai/zuora-mcp-server/zuora-mcp-server/configure-zuora-remote-mcp-server/redirect-uris-by-mcp-client) and not from each client's own docs. Check the URL your client sends if sign-in fails.
+
+| Client | Redirect URL |
+| ------ | ------------ |
+| Claude.ai and Claude Desktop | `https://claude.ai/api/mcp/auth_callback` and `https://claude.com/api/mcp/auth_callback` |
+| VS Code desktop | `http://127.0.0.1:33418/` |
+| VS Code web | `https://vscode.dev/redirect/` |
+| Gemini CLI | `http://localhost:7777/oauth/callback` |
+
+ChatGPT generates a different callback URL for each connector so copy it from the ChatGPT connector settings.
 
 ## Install in Grok Bot
 
