@@ -6,15 +6,27 @@ The plugin contains only the MCP server. Skyflow's skills live in [SkyflowFoundr
 
 ## Install in Grok Bot
 
-1. Open **Settings → Plugins**.
-2. Paste `https://github.com/SkyflowFoundry/skyflow-mcp-plugin` into the **Search or Paste Link** box.
-3. Select **skyflow** and click **Add**.
-4. Connect the `skyflow` server and sign in to Skyflow when prompted.
-5. Ask the bot to list your Skyflow accounts to check the connection.
+These steps follow xAI's guide to [connecting apps in Grok Bot](https://docs.x.ai/grok-bot/computer-and-apps). Once the plugin is listed in the marketplace you can install it from the catalog:
+
+1. Open **Connect apps** from the sidebar.
+2. Search for **Skyflow** and add it.
+3. Choose **Authenticate** and sign in to Skyflow in the browser that opens.
+4. Confirm that Skyflow appears under **Installed**.
+5. Type `@` in a chat to attach Skyflow and ask the bot to list your Skyflow accounts.
+
+Until the plugin is listed you can add the server as a custom connector:
+
+1. Choose **Add a custom connector** at the bottom of **Connect apps**.
+2. Enter `Skyflow` as the **Name** and choose **Remote HTTPS** as the **Type**.
+3. Enter `https://mcp.skyflow.com` as the **Server URL** and leave the headers and OAuth fields empty.
+4. Choose **Add plugin**.
+5. Choose **Authenticate** if Skyflow shows **Needs auth** and then sign in to Skyflow.
+
+You can also ask the bot to add a custom MCP server at `https://mcp.skyflow.com`. If your team admin's MCP policy blocks the server then ask the admin to allow it.
 
 ## Install in Cursor
 
-Install from **Settings → Plugins** with the same link as Grok Bot.
+Once the plugin is listed you can install it from the [Cursor marketplace](https://cursor.com/marketplace).
 
 To test local changes copy the repo into Cursor's local plugin folder and reload the window:
 
